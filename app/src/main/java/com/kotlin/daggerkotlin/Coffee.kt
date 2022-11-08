@@ -11,7 +11,7 @@ import kotlin.properties.Delegates
 
 @ActivityScope
 //@Singleton
-class Coffee: Engine {
+class Coffee {
 
     // Field injection
     @set:Inject

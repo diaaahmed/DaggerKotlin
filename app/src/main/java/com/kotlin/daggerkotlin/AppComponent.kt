@@ -8,8 +8,7 @@ import javax.inject.Singleton
 @Component(modules = [SugarModule::class])
 interface AppComponent
 {
-    fun getSugar():Sugar
 
-    fun getRiver():River
+    fun getCoffeeComponentBuilder():CoffeeComponent.Builder
 
 }

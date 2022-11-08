@@ -36,8 +36,7 @@ class MainActivity : AppCompatActivity() {
 
          val appComponent = MyApplication.component
 
-        val coffeeComponent = DaggerCoffeeComponent.builder().milk(4)
-            .appComponent(appComponent)
+        val coffeeComponent = appComponent.getCoffeeComponentBuilder().milk(4)
             .sugar(4).build()
 
         coffeeComponent.inject(this)
